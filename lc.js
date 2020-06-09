@@ -14,6 +14,7 @@ const calculation = () => {
         alert("Fill THE INPUT!");
         clearInterval(intervaler);
         progress.value = 0;
+        a = 0;
       } else {
         const result = document.getElementById("result");
         const percentage = Math.random() * 100;

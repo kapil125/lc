@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: fuchsia;
+    /* background-image: linear-gradient(45deg, 
+    rgb(245, 124, 229),
+    rgb(209, 28, 149),
+    rgb(235, 31, 82),
+    rgb(250, 107, 162),
+    rgb(223, 14, 101),
+    rgb(248, 68, 209));
+    background-size: 500%;
+    background-position: left;
+    /* animation: myanim 4s alternate infinite; */
+}
+@keyframes myanim{
+    0%{background-position: right;}
+    100%{background-position: left;}
+}
+
+.main-box{
+    border-radius: 10px;
+    background-color: rgb(189, 17, 89);
+    margin-top: 20vh;
+    margin-left: 30vw;
+    height: 50vh;
+    width: 38vw;
+}
+input{
+    text-align: center;
+    margin-top: 50px;
+    outline: none;
+    border: 0px;
+    border-bottom:1px solid pink;
+    background-color: inherit;
+    margin: 20px 0px 0px 20px;
+    font-size: 1.1em;
+    color: white;
+}
+input:focus{
+    border-bottom: 1px solid rgb(252, 51, 235);
+}
+input::placeholder{
+    color: white;
+}
+img{
+    margin: 30px 0px 0px 170px;
+}
+.progress{
+    margin: 30px 0px 0px 50px;
+}
+#file{
+    width: 25em;
+}
+#result{
+    margin: 10px 0 0 220px;
+    font-size: 2em;
+    font-weight:700;
+    color: #fff;
+    text-shadow: 0 0 20px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(110, 10, 24);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-box{
+        height: 80vh;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 10vh;
+    }
+    input{
+        margin-top: 30px;
+        width: 80%;
+    }
+    img{
+        margin-left: 23vw;
+        margin-top: 10vh;
+    }
+    #file{
+        width: 95%;
+    }
+    #result{
+        margin-top: 10vh;
+        margin-left: 35vw;
+    }
+}

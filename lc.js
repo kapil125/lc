@@ -1,6 +1,9 @@
 const calculateBtn = document.querySelector("img");
-
+let a = 0;
 const calculation = () => {
+  a++;
+  console.log(a);
+  if(a === 1){
   const progressHandler = () => {
     let progress = document.getElementById("file");
     const input1 = document.getElementById("inp1");
@@ -24,5 +27,8 @@ const calculation = () => {
     }
   };
   let intervaler = setInterval(progressHandler, 100);
+ } else{
+      return;
+ }
 };
 calculateBtn.addEventListener("click", calculation);

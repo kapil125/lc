@@ -24,6 +24,7 @@ const calculation = () => {
         clearInterval(intervaler);
       }
     } else {
+      calculateBtn.style.animation = "hartAnim 2.5s";
       progress.value += 5;
     }
   };
